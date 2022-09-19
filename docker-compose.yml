@@ -8,5 +8,8 @@ services:
       - "3000:3000"
     volumes:
       - ./:/usr/src/app
+      - node_modules:/usr/src/app/node_modules
     stdin_open: true
     command: npm run dev
+volumes:
+  node_modules:
